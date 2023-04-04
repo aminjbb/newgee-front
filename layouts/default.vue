@@ -30,7 +30,7 @@
 
         
 
-      </div>
+      </div>   
       <Nuxt />
     </v-main>
     <!-- <v-navigation-drawer

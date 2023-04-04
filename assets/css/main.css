@@ -1005,3 +1005,7 @@ div.absolute1 {
   border: 2px solid #2EE17A;
   border-radius: 50%;
 }
+.main-container {
+  width: 1200px !important;
+  margin: auto;
+}

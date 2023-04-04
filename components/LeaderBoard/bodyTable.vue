@@ -1,7 +1,7 @@
 <template>
     <v-row justify="center" align="center">
         <v-row >
-            <div class="circle-box-leaderBord"></div>
+            <!-- <div class="circle-box-leaderBord"></div> -->
         </v-row>
         <v-row align="center" class="not_active_boadrd mt-10 mx-10">
             <v-col cols="6">
