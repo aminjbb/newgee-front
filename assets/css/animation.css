@@ -1,0 +1,128 @@
+.animation__mover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    transform: translate(-50%, 8px);
+  }
+}
+
+.glow {
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 15px #0ba9ca, 0 0 20px #0ba9ca,
+    0 0 25px #0ba9ca, 0 0 30px #0ba9ca;
+  -webkit-animation: blink 1.2s infinite alternate;
+  animation: blink 1.2s infinite alternate;
+}
+
+.glow:hover {
+  animation: unset;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0ba9ca,
+      0 0 30px #0ba9ca, 0 0 40px #0ba9ca;
+  }
+}
+
+@keyframes blink {
+  100% {
+    box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0ba9ca,
+      0 0 30px #0ba9ca, 0 0 40px #0ba9ca;
+  }
+}
+
+.fade-right {
+  animation: 2s linear 1s fadeRight forwards;
+  /* -webkit-animation: fadeRight 2s;
+  -moz-animation: fadeRight 2s;
+  -o-animation: fadeRight 2s;
+  -ms-animation: fadeRight 2s; */
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-125px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-moz-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-125px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-125px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-o-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-125px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-ms-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-125px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #0ff,
+    0 0 5px #0ff, 0 0 12px #0ff, 0 0 49px #0ff, 0 0 140px #0ff;
+}
