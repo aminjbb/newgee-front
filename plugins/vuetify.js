@@ -40,8 +40,9 @@ export default ctx => {
           MainBtn: "#8E66FF",
           Grey2: "#BDBDBD",
           Mauve:'#CAB0FF',
-          RedOrange:'#FF4500'
-
+          RedOrange:'#FF4500',
+          FlashWhite:"#F2F2F2",
+          OldSilver:"#828282"
         },
         dark: {
           MainBtn: "#8E66FF",

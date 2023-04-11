@@ -17,8 +17,8 @@
                     @click="notif = !notif">
                     <img width="25" src="../../assets/img/MessageIcon.png" alt="NEWGEE logo">
                 </div>
-                <div class="triangle-up" v-if="notif"></div>
-                <div class="notif-modal-box" v-if="notif">
+                <div  class="triangle-up" v-if="notif"></div>
+                <div v-click-outside="outsideNotifbox" class="notif-modal-box" v-if="notif">
                     <v-row align="center" class="ma-3">
                         <span class="mt-2">
                             <img src="~/assets/img/notifimg.svg" alt="">
@@ -36,9 +36,9 @@
             <div class="position__relative">
                 <div class="account_box ml-10 text-center d-flex align-center justify-center position__relative z-1"
                     @click="accountBox = !accountBox">
-                    <img width="86" class="ml-0 " src="../../assets/img/AccountImage.png" alt="NEWGEE logo">
+                    <img width="56" class="ml-0 " src="../../assets/img/Untitled design (2) 1.png" alt="NEWGEE logo">
                 </div>
-                <div class="dashboard-box pt-15 " v-if="accountBox && isLogin">
+                <div v-click-outside="outsideloginbox" class="dashboard-box pt-15 " v-if="accountBox && isLogin">
                     <div class="text-left">
                         <span class="t20400 white--text ml-5">
                             User Name
@@ -59,7 +59,7 @@
 
                     </div>
                 </div>
-                <div class="login-box pt-15 " v-if="accountBox && !isLogin">
+                <div v-click-outside="outsideloginbox" class="login-box pt-15 " v-if="accountBox && !isLogin">
                     <div class="text-left">
                         <div class="ml-15">
                             <span class="white--text">
@@ -96,6 +96,21 @@ export default {
             isLogin: false,
             notif: false
         }
+    },
+
+    methods:{
+        outsideloginbox(){
+            if(this.accountBox){
+                this.accountBox = false
+            }
+        },
+        outsideNotifbox(){
+            if(this.notif){
+                this.notif = false
+            }
+        },
+
+        
     }
 }
 </script>

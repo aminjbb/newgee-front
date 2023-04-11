@@ -25,7 +25,7 @@
                 <v-col cols="6" md="6">
                     <v-card color="#333333" min-height="654" min-width="493"
                         class=" rounded-xl d-flex justify-center align-center">
-                        <div class="login-box">
+                        <div class="login-box-login">
                             <span v-if="error">نام کاربری یا رمز عبور اشتباه است</span>
                             <v-form class="pa-7">
                                 <v-row>
@@ -73,10 +73,12 @@
 
                             </v-form>
                             <v-row align="center" justify="center" class="mb-4">
-                                <span class="white--text">Already a member?</span>
+                                <span class="white--text t18400">Already a member?</span>
                                 <span>
-                                    <v-btn text color="#FF0042">
-                                        Log in
+                                    <v-btn text to="/login">
+                                       <span class=" t18400 success--text">
+                                           login
+                                       </span>
                                     </v-btn>
                                 </span>
                             </v-row>

@@ -1,11 +1,11 @@
 <template>
     <div >
-        <vueper-slides  :slide-ratio="6 /25" fade :touchable="false">
-            <vueper-slide  class="rounded-lg" v-for="(slide, i) in slides" :key="i" :image="slide.image" :title="slide.title"
+        <vueper-slides  :slide-ratio="6 /25" fade :touchable="false" :arrows="false" >
+            <vueper-slide  class="br-22" v-for="(slide, i) in slides" :key="i" :image="slide.image" :title="slide.title"
                 :content="slide.content" />
         </vueper-slides>
     </div>
-</template>
+</template> 
 
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides'
@@ -16,6 +16,12 @@ export default {
     data() {
         return {
             slides: [
+                {
+                    image: require('~/assets/img/New tournament.png')
+                },
+                {
+                    image: require('~/assets/img/New tournament.png')
+                },
                 {
                     image: require('~/assets/img/New tournament.png')
                 },

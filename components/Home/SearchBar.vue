@@ -1,6 +1,6 @@
 <template>
     <div id="sarchGame" class="position__relative" style="width: 539px;">
-        <v-text-field class="custom-placeholer-color z-3" :loading="loading" v-model="search" @keyup="searchGame()"
+        <v-text-field color="MainBtn" class="custom-placeholer-color z-3" :loading="loading" v-model="search" @keyup="searchGame()"
             background-color="#111A17" dense outlined hide-details >
             <template #label>
                 <span class="Grey2--text t18400">Search a game </span>

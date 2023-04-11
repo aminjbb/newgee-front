@@ -3,7 +3,7 @@
     <v-col cols="3" class="ma-0">
       <HomeMenu/>
     </v-col>
-    <v-col cols="6" class="ma-0">
+    <v-col cols="6" class="pa-0">
       <HomeCarousel/>
       <TournamentsCard/>
     </v-col>
@@ -12,7 +12,7 @@
       <Games/>
       <Platforms/>
     </v-col>
-   
+  
   </v-row>
 </template>
 

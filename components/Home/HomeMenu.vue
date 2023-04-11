@@ -8,7 +8,7 @@
                 <img src="../../assets/img/tournaments-w.svg" alt="" class=" my-auto" height="31" width="31" v-else />
             </div>
             <div class="ml-4 d-flex align-content-center justify-center">
-                <span class="f18">Tournaments</span>
+                <span class="f18" :class="$route.name == 'index' ?'MainBtn--text' :''">Tournaments</span>
             </div>
         </v-row>
 
@@ -20,7 +20,7 @@
                 <img src="../../assets/img/Leaderboard.svg" alt="" class=" my-auto" height="31" width="31" v-else />
             </div>
             <div class="ml-4 d-flex align-content-center justify-center">
-                <span class="f18">Leaderboard</span>
+                <span class="f18" :class="$route.name == 'Leader-board' ?'MainBtn--text' :''">Leaderboard</span>
             </div>
         </v-row>
 
@@ -33,7 +33,7 @@
                 <img src="../../assets/img/Newsfeed.svg" alt="" class=" my-auto" height="31" width="31" v-else />
             </div>
             <div class="ml-4 d-flex align-content-center justify-center">
-                <span class="f18">Newsfeed</span>
+                <span class="f18" :class="$route.name == 'newsfeed' || $route.name =='newsfeed-url' ?'MainBtn--text' :''">Newsfeed</span>
             </div>
         </v-row>
 

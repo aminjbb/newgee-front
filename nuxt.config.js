@@ -23,6 +23,7 @@ export default {
   css: [
     // "~/assets/css/font.css",
     "~/assets/css/typography.css",
+    "~/assets/css/font.css",
     "~/assets/css/main.css",
     "~/assets/css/animation.css",
     "~/assets/css/container.css",

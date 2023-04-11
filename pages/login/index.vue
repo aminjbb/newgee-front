@@ -14,7 +14,7 @@
                     </v-row>
 
                     <v-card color="#333333" height="350" min-width="493" class=" rounded-xl mt-4 d-flex justify-center align-center">
-                        <div class="login-box">
+                        <div class="login-box-login">
 
                             <span v-if="error">نام کاربری یا رمز عبور اشتباه است</span>
                             <v-form>

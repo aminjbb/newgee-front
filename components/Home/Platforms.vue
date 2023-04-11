@@ -9,7 +9,7 @@
                 <v-row class="ma-0">
                     <v-col cols="6" lg="4">
                         <div class="mt-5 platform-card">
-                            <img src="~/assets/img/PlayStation_logo 1.png" alt="">
+                            <img src="~/assets/img/2560px-PlayStation_logo.png" alt="" width="75">
                             <!-- <v-img :aspect-ratio="16/9" :height="80" :width="80" :src="required('')"></v-img> -->
                         </div>
                         <div class="text-center mt-1" style=" width: 84px;">
