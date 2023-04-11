@@ -2,9 +2,11 @@
     <div class="text-center rounded-xl">
         <v-dialog v-model="dialog" width="954" class="">
             <template v-slot:activator="{ on, attrs }">
-                <v-btn color="#8E66FF" class="rounded-xl" dark v-bind="attrs" v-on="on">
-                   <span class="f12"> Become a pro</span>
-                </v-btn>
+                <v-btn color="white" class="br-29" height="45" width="354" v-bind="attrs" v-on="on">
+                                <span class="t20700  my-10 mx-5">
+                                    Become a pro
+                                </span>
+                            </v-btn>
             </template>
 
             <v-card color="#333333">

@@ -2,36 +2,37 @@
   <v-app dark>
 
     <v-main class="home-page">
-      <div>
-       
-          <v-row class="ma-0 d-flex align-center" >
-            <v-app-bar-nav-icon @click.stop="Drawer = !Drawer" class="hidden-md-and-up" />
-            <v-col cols="3">
-              <Logo />
-            </v-col>
-    
-          
-            <v-col cols="6">
-              <SearchBar />
-            </v-col>
+      <div class="main-container">
 
-            <!-- <NavigationMenu class="hidden-sm-and-down" /> -->
-            <!-- <v-spacer></v-spacer> -->
-            <v-col cols="3" >
-              <div class="pt-8">
-                <LoginRegisterBtn />
-              </div>
-             
-            </v-col>
-            
-          
-            <!-- <ProfileNavigationBtn v-if="isLogin" /> -->
-          </v-row>
+        <v-row class="ma-0 d-flex align-center">
+          <v-app-bar-nav-icon @click.stop="Drawer = !Drawer" class="hidden-md-and-up" />
+          <v-col cols="3">
+            <Logo />
+          </v-col>
+          <v-col cols="5">
+            <SearchBar />
+          </v-col>
 
-        
+          <!-- <NavigationMenu class="hidden-sm-and-down" /> -->
+          <!-- <v-spacer></v-spacer> -->
+          <v-col cols="4">
+            <div class="pt-8">
+              <LoginRegisterBtn />
+            </div>
 
-      </div>   
-      <Nuxt />
+          </v-col>
+
+
+          <!-- <ProfileNavigationBtn v-if="isLogin" /> -->
+        </v-row>
+
+
+
+      </div>
+      <div class="main-container">
+        <Nuxt />
+      </div>
+
     </v-main>
     <!-- <v-navigation-drawer
       v-model="rightDrawer"

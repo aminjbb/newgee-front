@@ -1,24 +1,26 @@
 <template>
-    <div class="match winner-top">
-        <div class="match-top team b-t-r-5">
+    <div class="match winner-top mt-15">
+        <div class="team b-t-r-5 position__relative">
             <span class="image"></span>
             <span class="seed">
-                <v-avatar size="20px">
+                <v-avatar size="40" style="top: -31px; position: absolute;
+    left: -14px;">
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
                 </v-avatar>
             </span>
-            <span class="name">Orlando Jetsetters</span>
-            <span class="score">2</span>
+            <span class="name success--text t14400">Orlando Jetsetters</span>
+            <span class="score success--text t14400">2</span>
         </div>
         <div class="match-bottom team b-b-r-5">
             <span class="image"></span>
             <span class="seed">
-                <v-avatar size="20px">
+                <v-avatar  size="40" style="bottom: -31px;position: absolute;
+    left: -14px;">
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
                 </v-avatar>
             </span>
-            <span class="name">D.C. Senators</span>
-            <span class="score">1</span>
+            <span class="name t14400">D.C. Senators</span>
+            <span class="score t14400">1</span>
         </div>
         <div class="match-lines">
             <div class="line one"></div>
@@ -31,9 +33,9 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style scoped>
@@ -83,13 +85,12 @@ body {
 }
 
 .match {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 240px;
-    max-width: 240px;
-    height: 62px;
-    margin: 12px 24px 12px 0;
+    width: 294px;
+    height: 70px;
+
+    background: #121212;
+    border: 1px solid #4F4F4F;
+    border-radius: 5px;
 }
 
 .match .match-top {
@@ -145,7 +146,7 @@ body {
 }
 
 .match-lines .line.two {
-    height: 44px;
+    height: 68px;
     width: 1px;
     left: 11px;
 }
@@ -203,9 +204,9 @@ body {
 
 .theme-light .winner-top .match-top,
 .theme-light .winner-bottom .match-bottom {
-    background: #fff;
-    color: #272f36;
-    border-color: #dadfe3;
+   
+    color: #2EE17A;
+
     z-index: 1;
 }
 

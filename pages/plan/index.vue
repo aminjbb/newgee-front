@@ -1,9 +1,9 @@
 <template>
     <v-row class="mt-5 ma-0">
-        <v-col cols="3" class="ma-0">
+        <v-col cols="2" class="ma-0">
             <HomeMenu />
         </v-col>
-        <v-col cols="6" class="ma-0">
+        <v-col cols="7" class="ma-0">
             <!-- <HomeCarousel/>
         <TournamentsCard/> -->
             <PlanCards />

@@ -3,16 +3,16 @@
         <div class="leader-board-container">
             <v-row class="pa-5" justify="space-between">
                 <div>
-                    <v-btn @click="tab = 0" text value="0" class="white--text mx-2">
+                    <v-btn @click="tab = 0" text value="0" class=" mx-2" :class="tab == 0 ? 'MainBtn--text active-tournament-btn' : 'white--text'"> 
                         About
                     </v-btn>
-                    <v-btn @click="tab = 1" text value="1" class="white--text mx-2">
+                    <v-btn @click="tab = 1" text value="1" class=" mx-2" :class="tab == 1 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         <span> Bracket</span>
                     </v-btn>
-                    <v-btn @click="tab = 2" text value="2" class="white--text mx-2">
+                    <v-btn @click="tab = 2" text value="2" class=" mx-2" :class="tab == 2 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         Standings
                     </v-btn>
-                    <v-btn @click="tab = 3" text value="2" class="white--text mx-2">
+                    <v-btn @click="tab = 3" text value="2" class=" mx-2" :class="tab == 3 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         Matches
                     </v-btn>
                 </div>
@@ -96,13 +96,13 @@
                 </v-row>
             </template>
             <template v-if="tab == 2">
-                <v-row justify="center" class="mt-5 ma-0">
+                <v-row justify="center" class="mt-15 ma-0">
                     <v-col cols="10">
                         <v-row justify="center">
-                            <v-col cols="3" class="ma-0">
+                            <v-col cols="2" class="ma-0">
                                 <!-- <HomeMenu/> -->
                             </v-col>
-                            <v-col cols="6" class="ma-0">
+                            <v-col cols="8" class="ma-0">
                                 <div>
                                     <headerTable />
                                     <searchTable />
@@ -110,7 +110,7 @@
                                 </div>
 
                             </v-col>
-                            <v-col cols="3" class="ma-0">
+                            <v-col cols="2" class="ma-0">
 
                             </v-col>
                         </v-row>
@@ -119,153 +119,13 @@
                 </v-row>
             </template>
 
-            <template>
+            <template v-if="tab == 3">
                 <v-row justify="center" class="mt-15">
-                    <div class="match-card mt-2">
-                        <v-row justify="space-between" class="pa-11">
-                            <div>
-                                <v-row>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                </v-row>
-                            </div>
-                            <div class="position__relative">
-                                
-                                <div class="time-box text-center pt-3" >
-                                    <div class="t40500 white--text vs-box">VS</div>
-                                    <span class="t14400 white--text">
-                                        Apr 28, 2022 8:00 PM
-                                    </span>
-                                </div>
-
-                                <div class="text-center pt-3" >
-                                
-                                    <span class="t14400 white--text">
-                                        Round of 16
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div>
-                                <v-row>
-                                    
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                </v-row>
-                            </div>
-                        </v-row>
-                    </div>
-                    <div class="match-card mt-2">
-                        <v-row justify="space-between" class="pa-11">
-                            <div>
-                                <v-row>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                </v-row>
-                            </div>
-                            <div class="position__relative">
-                                
-                                <div class="time-box text-center pt-3" >
-                                    <div class="t40500 white--text vs-box">VS</div>
-                                    <span class="t14400 white--text">
-                                        Apr 28, 2022 8:00 PM
-                                    </span>
-                                </div>
-
-                                <div class="text-center pt-3" >
-                                
-                                    <span class="t14400 white--text">
-                                        Round of 16
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div>
-                                <v-row>
-                                    
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                </v-row>
-                            </div>
-                        </v-row>
-                    </div>
-                    <div class="match-card mt-2">
-                        <v-row justify="space-between" class="pa-11">
-                            <div>
-                                <v-row>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                </v-row>
-                            </div>
-                            <div class="position__relative">
-                                
-                                <div class="time-box text-center pt-3" >
-                                    <div class="t40500 white--text vs-box">VS</div>
-                                    <span class="t14400 white--text">
-                                        Apr 28, 2022 8:00 PM
-                                    </span>
-                                </div>
-
-                                <div class="text-center pt-3" >
-                                
-                                    <span class="t14400 white--text">
-                                        Round of 16
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div>
-                                <v-row>
-                                    
-                                    <div class="mt-6 mx-3">
-                                        <div>
-                                            <span class="white--text">Luca burn</span>
-                                        </div>
-                                        <div class="mt-5">
-                                            <span class="white--text">Playing...</span>
-                                        </div>
-                                    </div>
-                                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
-                                </v-row>
-                            </div>
-                        </v-row>
-                    </div>
+                    <MatchGame />
+                    <MatchDefeatedGame/>
+                    <MatchWinGame/>
                 </v-row>
+                
             </template>
 
         </div>
@@ -281,17 +141,23 @@ import BracketTopWin from '~/components/Tournoment/BracketTopWin'
 import headerTable from '~/components/LeaderBoard/headerTable.vue'
 import searchTable from '~/components/LeaderBoard/searchTable.vue'
 import bodyTable from '~/components/LeaderBoard/bodyTable.vue'
+import MatchGame from '~/components/Public/MatchGame.vue'
+import MatchDefeatedGame from '~/components/Public/MatchDefeatedGame.vue'
+import MatchWinGame from '~/components/Public/MatchWinGame.vue'
 export default {
     components: {
         BracketTopWin, BracketBottomWin,
         headerTable,
         searchTable,
-        bodyTable
+        bodyTable,
+        MatchGame,
+        MatchDefeatedGame,
+        MatchWinGame
 
     },
     data() {
         return {
-            tab: 'one'
+            tab: 0
         }
     }
 }
@@ -551,7 +417,7 @@ body {
 
 .theme-dark-trendy .winner-top .match-top,
 .theme-dark-trendy .winner-bottom .match-bottom {
-    background: #323641;
+    background: black;
     color: #e3e8ef;
     z-index: 1;
 }
@@ -672,8 +538,8 @@ body {
 .theme-dark .theme-switcher #theme-dark,
 .theme-dark-trendy .theme-switcher #theme-dark-trendy,
 .theme-none .theme-switcher #theme-none {
-    background: #505b69;
-    border-color: #4a5461;
+    background: black;
+
 }
 </style>
 

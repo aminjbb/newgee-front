@@ -7,7 +7,7 @@ Vue.use(Vuetify)
 
 export default ctx => {
   const vuetify = new Vuetify({
-    rtl: true,
+    // rtl: true,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
@@ -28,7 +28,7 @@ export default ctx => {
           Salem: '#12924F',
           MoonYellow: '#F1C40F',
           Grey: '#7D7D7D',
-          MidGrey: '#636D77',
+          MidGrey: '#E0E0E0',
           Nero: '#272727',
           LightSlateGrey: '#87919B',
           ShuttleGrey: '#606870',
@@ -38,11 +38,16 @@ export default ctx => {
           Gunmetal: "#263742",
           redAccent: '#EB5757',
           MainBtn: "#8E66FF",
+          Grey2: "#BDBDBD",
+          Mauve:'#CAB0FF',
+          RedOrange:'#FF4500'
+
         },
         dark: {
           MainBtn: "#8E66FF",
           TournomentCard:"#121212",
-          green:'#2EE17A'
+          green:'#2EE17A',
+          Grey2: "#BDBDBD",
         }
       }
     }

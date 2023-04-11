@@ -17,7 +17,7 @@ export default {
         return {
             slides: [
                 {
-                    image: require('~/assets/img/Newtournamenthasbegun1.png')
+                    image: require('~/assets/img/New tournament.png')
                 },
                 // Other slides.
             ]

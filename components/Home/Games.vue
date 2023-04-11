@@ -7,31 +7,31 @@
                     games
                 </span>
                 <v-row class="ma-0">
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4"> 
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="6" lg="4">
                         <GamesCard />
                     </v-col>
                 </v-row>
