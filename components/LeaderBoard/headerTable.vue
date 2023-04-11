@@ -1,6 +1,6 @@
 <template>
     <v-row justify="center" align="center">
-        <v-row align="center" class="leader_boadrd_header mx-10">
+        <v-row align="center" class="leader_boadrd_header px-10">
             <v-col cols="6">
                 <v-row justify="center" align="center" class="pt-1">
                     <v-col cols="2">

@@ -1,7 +1,8 @@
 <template>
     <v-row class="my-10">
-        <v-col cols="6" class="pa-1">
-            <v-card max-height="419" dark color="TournomentCard" :loading="loading" class="mx-auto  rounded-xl tournament_card">
+        <v-col cols="12" lg="6" class="pa-1">
+            <v-card max-height="419" max-width="471" dark color="TournomentCard" :loading="loading"
+                class="mx-auto  rounded-xl tournament_card">
                 <template slot="progress">
                     <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                 </template>
@@ -33,14 +34,16 @@
                         </div>
 
                         <div class="mr-5">
-                            <v-btn dark color="#4F4F4F" class="pl-5 pr-5 ma-2 success--text rounded-xl text-center">
-                                <v-icon right dark class="mr-1">
-                                    mdi-check
-                                </v-icon>
+                            <div class="joined-box">
+                                <v-row class="pa-5" align="center" justify="space-between">
+                                    <v-icon right color="success" class="mr-1" >
+                                        mdi-check
+                                    </v-icon>
 
-                                Joined
-                             
-                            </v-btn>
+                                    <span class="mr-3 success--text t20700">Joined</span>
+                                </v-row>
+                            </div>
+
                         </div>
                     </v-row>
 
@@ -51,8 +54,9 @@
             </v-card>
         </v-col>
 
-        <v-col cols="6" class="pa-1">
-            <v-card max-height="419" dark color="TournomentCard"  :loading="loading" class="mx-auto  rounded-xl tournament_card">
+        <v-col cols="12"  lg="6" class="pa-1">
+            <v-card max-width="471" max-height="419" dark color="TournomentCard" :loading="loading"
+                class="mx-auto  rounded-xl tournament_card">
                 <template slot="progress">
                     <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                 </template>
@@ -84,8 +88,16 @@
                         </div>
 
                         <div class="mr-5">
-                            <v-btn dark color="MainBtn" class="pl-5 pr-5 ma-2 white--text rounded-xl">
-                                Join
+                            <v-btn dark color="MainBtn" class="pl-5 pr-5 ma-2 white--text rounded-xl" width="120"
+                                height="45" to="/tournament">
+                                <v-row justify="space-between" align="center" class="px-5">
+                                    <span class="t20700 ">
+                                        Join
+                                    </span>
+                                    <v-row align="center" class="pl-5">
+                                        <img src="~/assets/img/Coins-w.svg" alt=""> <span> 50</span>
+                                    </v-row>
+                                </v-row>
                             </v-btn>
                         </div>
                     </v-row>
@@ -96,8 +108,9 @@
 
             </v-card>
         </v-col>
-        <v-col cols="6" class="pa-1">
-            <v-card  max-height="419" dark color="TournomentCard"  :loading="loading" class="mx-auto  rounded-xl tournament_card">
+        <v-col cols="12"  lg="6" class="pa-1">
+            <v-card max-width="471" max-height="419" dark color="TournomentCard" :loading="loading"
+                class="mx-auto  rounded-xl tournament_card">
                 <template slot="progress">
                     <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                 </template>
@@ -129,14 +142,17 @@
                         </div>
 
                         <div class="mr-5">
-                            <v-btn dark color="#4F4F4F" class="pl-5 pr-5 ma-2 success--text rounded-xl text-center">
-                                <v-icon right dark class="mr-1">
-                                    mdi-check
-                                </v-icon>
 
-                                Joined
-                             
-                            </v-btn>
+                            <div class="joined-box">
+                                <v-row class="pa-5" align="center" justify="space-between">
+                                    <v-icon right color="success" class="mr-1" >
+                                        mdi-check
+                                    </v-icon>
+
+                                    <span class="mr-3 success--text t20700">Joined</span>
+                                </v-row>
+                            </div>
+
                         </div>
                     </v-row>
 
@@ -147,8 +163,9 @@
             </v-card>
         </v-col>
 
-        <v-col cols="6" class="pa-1">
-            <v-card  max-height="419" color="TournomentCard"  dark :loading="loading" class="mx-auto  rounded-xl tournament_card">
+        <v-col cols="12"  lg="6" class="pa-1">
+            <v-card max-width="471" max-height="419" color="TournomentCard" dark :loading="loading"
+                class="mx-auto  rounded-xl tournament_card">
                 <template slot="progress">
                     <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                 </template>
@@ -180,8 +197,16 @@
                         </div>
 
                         <div class="mr-5">
-                            <v-btn dark color="MainBtn" class="pl-5 pr-5 ma-2 white--text rounded-xl">
-                                Join
+                            <v-btn to="/tournament" dark color="MainBtn" class="pl-5 pr-5 ma-2 white--text rounded-xl" width="120"
+                                height="45">
+                                <v-row justify="space-between" align="center" class="px-5">
+                                    <span class="t20700 ">
+                                        Join
+                                    </span>
+                                    <v-row align="center" class="pl-5">
+                                        <img src="~/assets/img/Coins-w.svg" alt=""> <span> 50</span>
+                                    </v-row>
+                                </v-row>
                             </v-btn>
                         </div>
                     </v-row>
@@ -192,7 +217,7 @@
 
             </v-card>
         </v-col>
-    
+
     </v-row>
 </template>
 

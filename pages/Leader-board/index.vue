@@ -27,6 +27,7 @@ import bodyTable from '~/components/LeaderBoard/bodyTable.vue'
 import Filters from '~/components/Home/Filters.vue'
 import Games from '~/components/Home/Games.vue'
 import Platforms from '~/components/Home/Platforms.vue'
+import HomeMenu from '~/components/Home/HomeMenu.vue'
 export default {
   components: {
     headerTable,
@@ -34,7 +35,8 @@ export default {
     bodyTable,
     Filters,
     Games,
-    Platforms
+    Platforms,
+    HomeMenu
   }
 }
 </script>
