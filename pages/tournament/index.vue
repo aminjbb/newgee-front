@@ -57,7 +57,7 @@
             <template v-if="tab == 1">
                 <v-row justify="center">
                     <v-col cols="12">
-                        <div class="theme theme-dark tournoment-bg">
+                        <div class="theme theme-dark tournoment-bg pl-10">
                             <div class="bracket  disable-image">
                                 <div class="column one">
                                     <BracketTopWin />
@@ -78,7 +78,7 @@
 
                                 </div>
 
-                                <div class="column two">
+                                <div class="column two ml-10">
                                     <BracketTopWin />
 
                                     <BracketBottomWin />
@@ -185,8 +185,8 @@ body {
 }
 
 .theme {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     position: absolute;
 }
 
@@ -354,8 +354,9 @@ body {
 }
 
 .theme-dark {
-    background: #0e1217;
+    background: #0000;
     border-color: #040607;
+    
 }
 
 .theme-dark .match-lines .line {

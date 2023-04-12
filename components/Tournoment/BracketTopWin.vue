@@ -3,10 +3,12 @@
         <div class="team b-t-r-5 position__relative">
             <span class="image"></span>
             <span class="seed">
-                <v-avatar size="40" style="top: -31px; position: absolute;
-    left: -14px;">
+                <div class="bracket-avatar-top">
+                    <img width="26" height="26" src="../../assets/img/Untitled design (2) 1.png" alt="NEWGEE logo">
+                </div>
+                <!-- <v-avatar size="40" style="">
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
-                </v-avatar>
+                </v-avatar> -->
             </span>
             <span class="name success--text t14400">Orlando Jetsetters</span>
             <span class="score success--text t14400">2</span>
@@ -14,19 +16,24 @@
         <div class="match-bottom team b-b-r-5">
             <span class="image"></span>
             <span class="seed">
-                <v-avatar  size="40" style="bottom: -31px;position: absolute;
-    left: -14px;">
+                <div class="bracket-avatar-bottom">
+                    <img width="26" height="26" src="../../assets/img/Untitled design (2) 1.png" alt="NEWGEE logo">
+                </div>
+                <!-- <v-avatar size="40" style="bottom: -31px;position: absolute;
+        left: -14px;">
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
-                </v-avatar>
+                </v-avatar> -->
             </span>
             <span class="name t14400">D.C. Senators</span>
             <span class="score t14400">1</span>
         </div>
         <div class="match-lines">
+            <div class="circle-1"></div>
             <div class="line one"></div>
             <div class="line two"></div>
         </div>
         <div class="match-lines alt">
+            <div class="circle"></div>
             <div class="line one"></div>
         </div>
     </div>
@@ -40,7 +47,16 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
-
+.circle-1 {
+    width: 8px;
+    height: 8px;
+    left: -3px;
+    background: #7B7B7B;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    z-index: 1;;
+}
 html {
     height: 100%;
     width: 100%;
@@ -132,7 +148,7 @@ body {
     top: 50%;
     bottom: 0;
     margin-top: 0px;
-    right: -1px;
+    right: -8px;
 }
 
 .match-lines .line {
@@ -142,18 +158,30 @@ body {
 
 .match-lines .line.one {
     height: 1px;
-    width: 12px;
+    width: 23px;
 }
 
 .match-lines .line.two {
     height: 68px;
     width: 1px;
-    left: 11px;
+    left: 23px;
 }
 
 .match-lines.alt {
-    left: -12px;
+    left: -33px;
 }
+
+.match-lines.alt .circle {
+    width: 8px;
+    height: 8px;
+    left: 20px;
+    background: #7B7B7B;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+}
+
 
 .match:nth-child(even) .match-lines .line.two {
     transform: translate(0, -100%);
@@ -204,7 +232,7 @@ body {
 
 .theme-light .winner-top .match-top,
 .theme-light .winner-bottom .match-bottom {
-   
+
     color: #2EE17A;
 
     z-index: 1;

@@ -951,7 +951,7 @@ div.absolute1 {
 }
 
 .leader-board-container {
-  width: 1598px;
+  width: 1500px;
   background: #000000;
   border-radius: 30px;
   min-height: 912px;
@@ -964,8 +964,8 @@ div.absolute1 {
 }
 
 .tournoment-bg {
+  width: 1500px;
   background: #000000 !important;
-  width: 84% !important;
   height: 830px !important;
   overflow: hidden !important;
   overflow-y: scroll !important;
@@ -1458,7 +1458,8 @@ div.absolute1 {
   justify-content: center;
   align-items: center;
 }
-.avatatar-user{
+
+.avatatar-user {
   top: -5px;
   left: -17px;
   position: absolute;
@@ -1513,4 +1514,32 @@ div.absolute1 {
   height: 71px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(101, 47, 255, 0.7) 0%, rgba(142, 102, 255, 0) 100%);
   border-radius: 10px;
+}
+
+.bracket-avatar-top {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #000000;
+  border: 1px solid #4F4F4F;
+  top: -23px;
+  position: absolute;
+  left: -24px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.bracket-avatar-bottom {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #000000;
+  border: 1px solid #4F4F4F;
+  bottom: -23px;
+  position: absolute;
+  left: -24px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
