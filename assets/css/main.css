@@ -1100,6 +1100,9 @@ div.absolute1 {
 .z-4 {
   z-index: 4;
 }
+.z-5 {
+  z-index: 5;
+}
 
 .select-box {
   width: 252px;
@@ -1136,8 +1139,8 @@ div.absolute1 {
 }
 
 .platform-card {
-  width: 84px;
-  height: 87px;
+  width: 76px;
+  height: 80px;
   left: 1518px;
   top: 905px;
   display: flex;
@@ -1526,7 +1529,7 @@ div.absolute1 {
   position: absolute;
   left: -24px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1540,6 +1543,34 @@ div.absolute1 {
   position: absolute;
   left: -24px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
+}
+
+
+.game-avatar-box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 112px;
+  height: 112px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.border-p{
+  border: 2px solid #8E66FF;
+}
+
+.border-w{
+  border: 2px solid #F2F2F2;
+}
+
+.border-red{
+  border: 2px solid #FF4500 !important;
+}
+
+.border-g{
+  border: 2px solid #2EE17A !important;
 }

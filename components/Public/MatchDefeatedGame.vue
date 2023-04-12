@@ -3,7 +3,9 @@
         <v-row justify="space-between" class="pa-11">
             <div>
                 <v-row>
-                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
+                    <div class="game-avatar-box border-w">
+                        <img src="~/assets/img/5.png" height="106" width="106" alt="">
+                    </div>
                     <div class="mt-6 mx-3">
                         <div>
                             <span class="white--text">Luca burn</span>
@@ -20,7 +22,7 @@
                         Defeated
                     </span>
                 </div>
-                <div class="time-box text-center pt-3">
+                <div class="time-box text-center border-red pt-3">
                     <div class="t40500 white--text vs-box">VS</div>
                     <span class="t14400 white--text">
                         Apr 28, 2022 8:00 PM
@@ -46,7 +48,9 @@
                             <span class="RedOrange--text t40500">25</span>
                         </div>
                     </div>
-                    <img src="~/assets/img/5.png" height="106" width="106" alt="">
+                    <div class="game-avatar-box border-red">
+                        <img src="~/assets/img/5.png" height="106" width="106" alt="">
+                    </div>
                 </v-row>
             </div>
         </v-row>

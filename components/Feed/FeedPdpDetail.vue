@@ -38,9 +38,9 @@
         </div>
 
         <v-row justify="center">
-            <v-col cols="4"><PdpCardDetail/></v-col>
-            <v-col cols="4"><PdpCardDetail/></v-col>
-            <v-col cols="4"><PdpCardDetail/></v-col>
+            <v-col cols="6"><PdpCardDetail/></v-col>
+            <v-col cols="6"><PdpCardDetail/></v-col>
+            <!-- <v-col cols="4"><PdpCardDetail/></v-col> -->
         </v-row>
     </div>
 </template>

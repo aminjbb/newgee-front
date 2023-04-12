@@ -51,6 +51,13 @@
             <v-col cols="6">
                 <v-row justify="end" align="center">
 
+                    <v-col cols="6" v-if="tournament">
+                        <v-row justify="center" align="center" class="pr-15">
+                            <span class=" t16600 Grey2--text">
+                                Semi Final
+                            </span>
+                        </v-row>
+                    </v-col>
                     <v-col cols="4">
                         <v-row justify="center" align="center">
                             <span class="vit f600-30 Mauve--text">
@@ -108,7 +115,13 @@
             </v-col>
             <v-col cols="6">
                 <v-row justify="end" align="center">
-
+                    <v-col cols="6" v-if="tournament">
+                        <v-row justify="center" align="center" class="pr-15 mr-8">
+                            <span class=" t16600 Grey2--text">
+                                Semi Final
+                            </span>
+                        </v-row>
+                    </v-col>
                     <v-col cols="4">
                         <v-row justify="center" align="center">
                             <span class="vit f600-30 FlashWhite--text">
@@ -124,6 +137,8 @@
 
 <script>
 export default {
-
+    props: {
+        tournament: false
+    }
 }
 </script>

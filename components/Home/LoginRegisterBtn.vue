@@ -31,11 +31,11 @@
                 </div>
             </div>
             <div class="position__relative">
-                <div class="account_box ml-10 text-center d-flex align-center justify-center position__relative z-1"
+                <div class="account_box ml-10 text-center d-flex align-center justify-center position__relative "
                     @click="accountBox = !accountBox">
                     <img width="56" class="ml-0 " src="../../assets/img/Untitled design (2) 1.png" alt="NEWGEE logo">
                 </div>
-                <div v-click-outside="outsideloginbox" class="dashboard-box pt-15 " v-if="accountBox && isLogin">
+                <div v-click-outside="outsideloginbox" class="dashboard-box pt-15 z-5" v-if="accountBox && isLogin">
                     <div class="text-left">
                         <span class="t20400 white--text ml-5">
                             User Name
@@ -43,7 +43,7 @@
 
                         <v-divider color="white" class="mt-5"></v-divider>
                         <div class="mt-10">
-                            <v-row align="center">
+                            <v-row align="center" @click="$router.push('/user-profile'); accountBox=false">
                                 <div class="ml-8 mr-2"><img src="~/assets/img/dashboard.svg" class="mt-2" alt=""></div>
                                 <div class="t18400 white--text ">Dashboard</div>
                             </v-row>
@@ -90,7 +90,7 @@ export default {
     data() {
         return {
             accountBox: false,
-            isLogin: false,
+            isLogin: true,
             notif: false
         }
     },

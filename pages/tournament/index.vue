@@ -104,9 +104,9 @@
                             </v-col>
                             <v-col cols="8" class="ma-0">
                                 <div>
-                                    <headerTable />
+                                    <headerTable :tournament="true"/>
                                     <searchTable />
-                                    <bodyTable />
+                                    <bodyTable :tournament="true"/>
                                 </div>
 
                             </v-col>
