@@ -27,8 +27,8 @@
                 <v-row justify="center mt-15">
                     <div class="user-profile-top-menu-box ">
                         <v-row justify="space-between" class="pa-6 px-10">
-                            <v-btn text>
-                                <span class="t16400 Grey2--text">
+                            <v-btn text to="/user-profile">
+                                <span class="t16400 MainBtn--text">
                                     Statistics
                                 </span>
                             </v-btn>
@@ -37,7 +37,7 @@
                                     Milestone
                                 </span>
                             </v-btn>
-                            <v-btn text>
+                            <v-btn text  to="/user-profile/user-info">
                                 <span class="t16400 Grey2--text">
                                     Profile
                                 </span>

@@ -2,7 +2,7 @@
     <v-card color="black border-r-25 mx-4" :min-height="291">
         <v-row>
             <v-col cols="7">
-                <v-img class="border-r-25 ma-5 ml-7" :height="174" :width="280"
+                <v-img class="border-r-25 ma-5 ml-7" :height="150" :width="220"
                     src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
                 </v-img>
                 <p class="title white--text t20700 ml-6"><span>PUBG Tournament By red bull</span></p>

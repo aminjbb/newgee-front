@@ -9,7 +9,7 @@
                     <span class="ma-4 t18700 success--text ml-15">1500</span>
                 </v-row>
             </div>
-            <div class="notif_box  mr-6 text-center d-flex align-center justify-center">
+            <div class="notif_box  mr-6 text-center d-flex align-center justify-center" @click="$router.push('/users-list')">
                 <img width="25" src="../../assets/img/AddUserIcon.png" alt="NEWGEE logo">
             </div>
             <div class="position__relative">
@@ -30,9 +30,6 @@
                     <v-divider color="white"></v-divider>
                 </div>
             </div>
-
-
-
             <div class="position__relative">
                 <div class="account_box ml-10 text-center d-flex align-center justify-center position__relative z-1"
                     @click="accountBox = !accountBox">

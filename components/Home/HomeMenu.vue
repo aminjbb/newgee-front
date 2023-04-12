@@ -40,7 +40,7 @@
         <v-row class="menu relative " align="center" v-if="$route.name != 'plan'">
             <div class="position__relative">
                 <div class="circle-box-pro-account ml-10"></div>
-                <v-card color="#333333" class="rounded-xl mt-20" dark min-height="260" width="324">
+                <v-card color="#333333" class="rounded-xl mt-20" dark min-height="260" width="270">
                     <!-- <div class="absolutePlanHome"> -->
                     <img class="mt-min20" src="../../assets/img/proAccount2.png" alt="">
                     <!-- <v-img :aspect-ratio="16/9" :width="200" :height="200"

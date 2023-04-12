@@ -27,7 +27,7 @@
                 <v-row justify="center mt-15">
                     <div class="user-profile-top-menu-box ">
                         <v-row justify="space-between" class="pa-6 px-10">
-                            <v-btn text>
+                            <v-btn text to="/user-profile">
                                 <span class="t16400 Grey2--text">
                                     Statistics
                                 </span>
@@ -37,8 +37,8 @@
                                     Milestone
                                 </span>
                             </v-btn>
-                            <v-btn text>
-                                <span class="t16400 Grey2--text">
+                            <v-btn text  to="/user-profile/user-info">
+                                <span class="t16400 MainBtn--text">
                                     Profile
                                 </span>
                             </v-btn>
@@ -48,7 +48,7 @@
                     <v-col cols="12" class="mt-10">
                         <v-row justify="center">
                             <v-col cols="2">
-                                <div class="user-info-menu-active mt-4">
+                                <div class="user-info-menu-active mt-4" @click="$router.push('/user-profile/user-info')">
                                     <v-row justify="center" align="center" class="pt-5">
                                         <span class="t16400 white--text ">Basic Info</span>
 
@@ -56,28 +56,28 @@
 
 
                                 </div>
-                                <div class="user-info-menu mt-4">
+                                <div class="user-info-menu mt-4" @click="$router.push('/user-profile/id-management')">
                                     <v-row justify="center" align="center" class="pt-7">
                                         <span class="t16400 white--text ">ID Managment</span>
                                     </v-row>
 
 
                                 </div>
-                                <div class="user-info-menu mt-4">
+                                <div class="user-info-menu mt-4" @click="$router.push('/user-profile/frind-list')">
                                     <v-row justify="center" align="center" class="pt-7">
                                         <span class="t16400 white--text ">Friend List</span>
                                     </v-row>
 
 
                                 </div>
-                                <div class="user-info-menu mt-4">
+                                <div class="user-info-menu mt-4"  @click="$router.push('/user-profile/subscription-plan')">
                                     <v-row justify="center" align="center" class="pt-7">
                                         <span class="t16400 white--text ">Subscription Plan</span>
                                     </v-row>
 
 
                                 </div>
-                                <div class="user-info-menu mt-4">
+                                <div class="user-info-menu mt-4" @click="$router.push('/user-profile/security')">
                                     <v-row justify="center" align="center" class="pt-7">
                                         <span class="t16400 white--text ">Security</span>
                                     </v-row>
@@ -86,20 +86,20 @@
                                 </div>
 
                             </v-col>
-                            <v-col cols="6">
-                                <div class="user-info-box" id="userInfoBox">
+                            <v-col cols="7">
+                                <div class="user-info-box px-3" id="userInfoBox">
                                     <v-row justify="center" align="center" class="py-10 ">
                                         <v-col cols="3">
-                                            <span class="t16400 white--text ml-5">
+                                            <span class="t16400 white--text">
                                                 Full name
                                             </span>
                                         </v-col>
                                         <v-col cols="4">
-                                            <div>
+                                            <div >
                                                 <v-text-field background-color="#4F4F4F" dense outlined hide-details
                                                     color="#D9D9D9">
                                                     <template #label>
-                                                        <span class="Grey2--text t18400">First name</span>
+                                                        <span class="Grey2--text t14400">First name</span>
                                                     </template>
 
                                                 </v-text-field>
@@ -109,13 +109,13 @@
                                             <v-text-field background-color="#4F4F4F" dense outlined hide-details
                                                 color="#D9D9D9">
                                                 <template #label>
-                                                    <span class="Grey2--text t18400">Last name</span>
+                                                    <span class="Grey2--text t14400">Last name</span>
                                                 </template>
 
                                             </v-text-field>
                                         </v-col>
                                         <v-col cols="3">
-                                            <span class="t16400 white--text ml-5">
+                                            <span class="t16400 white--text">
                                                 Phone number
                                             </span>
                                         </v-col>
@@ -124,14 +124,14 @@
                                                 <v-text-field background-color="#4F4F4F" dense outlined hide-details
                                                     color="#D9D9D9">
                                                     <template #label>
-                                                        <span class="Grey2--text t18400">Phone number</span>
+                                                        <span class="Grey2--text t14400">Phone number</span>
                                                     </template>
 
                                                 </v-text-field>
                                             </div>
                                         </v-col>
                                         <v-col cols="3">
-                                            <span class="t16400 white--text ml-5">
+                                            <span class="t16400 white--text ">
                                                 Email
                                             </span>
                                         </v-col>
@@ -140,14 +140,14 @@
                                                 <v-text-field background-color="#4F4F4F" dense outlined hide-details
                                                     color="#D9D9D9">
                                                     <template #label>
-                                                        <span class="Grey2--text t18400">Email</span>
+                                                        <span class="Grey2--text t14400">Email</span>
                                                     </template>
 
                                                 </v-text-field>
                                             </div>
                                         </v-col>
                                         <v-col cols="3">
-                                            <span class="t16400 white--text ml-5">
+                                            <span class="t16400 white--text">
                                                 User name
                                             </span>
                                         </v-col>
@@ -156,7 +156,7 @@
                                                 <v-text-field background-color="#4F4F4F" dense outlined hide-details
                                                     color="#D9D9D9">
                                                     <template #label>
-                                                        <span class="Grey2--text t18400">User name</span>
+                                                        <span class="Grey2--text t14400">User name</span>
                                                     </template>
 
                                                 </v-text-field>
@@ -174,7 +174,7 @@
                                     </v-row>
                                 </div>
 
-                                <v-row justify="end" class="py-15 px-10 mr-12">
+                                <v-row justify="center" class="py-15 pl-15">
                                    
                                     <v-btn color="OldSilver" width="116" height="38" class="br-29 mx-4" outlined>
                                         <span class="t14400 white--text">Cancel</span>

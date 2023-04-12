@@ -16,7 +16,7 @@
                         <v-col cols="8">
                             <v-card color="#333333" min-height="432" min-width="493"
                                 class=" rounded-xl mt-4 d-flex justify-center align-center pa-5">
-                                <div class="login-box">
+                                <div class="login-box-login">
                                     <div class=" forgot-password-box">
                                         <p class="white--text forgot-password-title">Trouble with logging in?</p>
                                         <p class="white--text forgot-password-sub-title text-justify">Enter your email
@@ -24,7 +24,7 @@
                                             number or username, and we'll send you a code to get back into your account.
                                         </p>
                                     </div>
-                                    <span v-if="error">نام کاربری یا رمز عبور اشتباه است</span>
+                                    <!-- <span v-if="error">نام کاربری یا رمز عبور اشتباه است</span> -->
                                     <v-form>
                                         <v-text-field dark label=" Email address" v-model="username" :rules="Rule"
                                             class="rounded-xl" outlined :name="Math.random()" autocomplete="off" />
@@ -51,7 +51,7 @@
                                     <v-col>
                                        
                                         <v-row align="center" justify="center ">
-                                            <p  class="New-Account">Create New Account</p>
+                                            <p  class="New-Account success--text">Create New Account</p>
                                         </v-row>
                                     </v-col>
                                     <v-col >
