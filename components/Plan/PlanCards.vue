@@ -14,7 +14,7 @@
             </v-col>
         </v-row> -->
         <div class="absolute">
-            <v-img :aspect-ratio="16 / 9" :width="468" :height="468" :src="require('~/assets/img/proAccount2.png')"></v-img>
+            <v-img :aspect-ratio="16 / 9" :width="400" :height="400" :src="require('~/assets/img/proAccount2.png')"></v-img>
         </div>
         <div class="absolute1">
             <v-row justify="center" align="end" class="">
@@ -52,7 +52,7 @@
                 </v-col>
                 <v-col cols="6">
                     <v-card class=" rounded-xl " color="#561DC5" min-height="599">
-                        <v-row justify="end" class="pa-15">
+                        <v-row justify="end" class="px-15 py-10">
                             <div class="plan-filter ">
                                 <v-btn width="100" color="white" class="br-29" @click="filterAccount = 'Y'"
                                     v-if="filterAccount == 'Y'">

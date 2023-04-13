@@ -2,8 +2,8 @@
     <div>
         <div>
             <v-img class="border-r-41" :aspect-ratio="16 / 9" :height="413"
-                src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-            </v-img>
+            :src="require('~/assets/img/newsfeedbanner.png')"/>
+            
             <v-row justify="center" class="mt-10">
                 <v-col cols="8">
                     <div>

@@ -1,7 +1,7 @@
 <template>
     <div class="position__relative">
         <v-img class="border-r-41" :aspect-ratio="16 / 9" :height="413"
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+            :src="require('~/assets/img/newsfeedbanner.png')">
             
         </v-img>
         <div class="absoule-bottom">

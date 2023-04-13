@@ -3,16 +3,20 @@
         <div class="leader-board-container">
             <v-row class="pa-5" justify="space-between">
                 <div>
-                    <v-btn @click="tab = 0" text value="0" class=" mx-2" :class="tab == 0 ? 'MainBtn--text active-tournament-btn' : 'white--text'"> 
+                    <v-btn @click="tab = 0" text value="0" class=" mx-2"
+                        :class="tab == 0 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         About
                     </v-btn>
-                    <v-btn @click="tab = 1" text value="1" class=" mx-2" :class="tab == 1 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
+                    <v-btn @click="tab = 1" text value="1" class=" mx-2"
+                        :class="tab == 1 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         <span> Bracket</span>
                     </v-btn>
-                    <v-btn @click="tab = 2" text value="2" class=" mx-2" :class="tab == 2 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
+                    <v-btn @click="tab = 2" text value="2" class=" mx-2"
+                        :class="tab == 2 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         Standings
                     </v-btn>
-                    <v-btn @click="tab = 3" text value="2" class=" mx-2" :class="tab == 3 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
+                    <v-btn @click="tab = 3" text value="2" class=" mx-2"
+                        :class="tab == 3 ? 'MainBtn--text active-tournament-btn' : 'white--text'">
                         Matches
                     </v-btn>
                 </div>
@@ -27,7 +31,7 @@
                 <v-row justify="center" class="mt-8">
                     <v-card class="border-r-25" height="470" width="828" color="#333333">
                         <v-img class="border-r-25" :aspect-ratio="16 / 9" :height="408" :width="828"
-                            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+                            :src="require('~/assets/img/bannerT.png')">
 
                         </v-img>
 
@@ -44,6 +48,21 @@
 
                         <v-row justify="start" class="px-10">
                             <p class="MainBtn--text t20700">PUBG Game storyline</p>
+                            <p class="white--text t16400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </v-row>
+                        <v-row justify="space-between" class="px-10">
+                            <p class="MainBtn--text t20700">Rules</p>
+                            <p class="MainBtn--text t20700">Jun 26 - Jun 27, 2020</p>
+
+
+                        </v-row>
+                        <v-row justify="start" class="px-10">
+                           
                             <p class="white--text t16400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -104,9 +123,9 @@
                             </v-col>
                             <v-col cols="8" class="ma-0">
                                 <div>
-                                    <headerTable :tournament="true"/>
+                                    <headerTable :tournament="true" />
                                     <searchTable />
-                                    <bodyTable :tournament="true"/>
+                                    <bodyTable :tournament="true" />
                                 </div>
 
                             </v-col>
@@ -122,10 +141,10 @@
             <template v-if="tab == 3">
                 <v-row justify="center" class="mt-15">
                     <MatchGame />
-                    <MatchDefeatedGame/>
-                    <MatchWinGame/>
+                    <MatchDefeatedGame />
+                    <MatchWinGame />
                 </v-row>
-                
+
             </template>
 
         </div>
@@ -356,7 +375,7 @@ body {
 .theme-dark {
     background: #0000;
     border-color: #040607;
-    
+
 }
 
 .theme-dark .match-lines .line {
@@ -541,6 +560,5 @@ body {
 .theme-none .theme-switcher #theme-none {
     background: black;
 
-}
-</style>
+}</style>
 
